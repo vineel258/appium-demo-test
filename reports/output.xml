@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20160820 23:23:47.300" generator="Robot 3.0 (Python 2.7.11 on darwin)">
+<suite source="/Users/vallepuv/PycharmProjects/appium-demo-test/tests/test_app.robot" id="s1" name="Test App">
+<test id="s1-t1" name="User Should Be Able To Access Project Information">
+<kw name="Open Application And Verify Project Information">
+<msg timestamp="20160820 23:23:47.461" level="TRACE">Arguments: [  ]</msg>
+<kw name="Open Application On Mobile">
+<msg timestamp="20160820 23:23:47.461" level="TRACE">Arguments: [  ]</msg>
+<kw name="Open Application" library="AdminPage">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=6.0</arg>
+<arg>deviceName=192.168.56.101:5555</arg>
+<arg>app=/Users/vallepuv/PycharmProjects/appium-demo-test/tests/apps/app-sample.apk</arg>
+<arg>automationName=appium</arg>
+<arg>appPackage=com.ustwo.sample</arg>
+<arg>appActivity=CommitListActivity</arg>
+</arguments>
+<msg timestamp="20160820 23:23:47.462" level="TRACE">Arguments: [ 'http://localhost:4723/wd/hub' | platformName='Android' | platformVersion='6.0' | deviceName='192.168.56.101:5555' | app='/Users/vallepuv/PycharmProjects/appium-demo-test/tests/apps/app-sample.apk' | automationName='appium' | appPackage='com.ustwo.sample' | appActivity='CommitListActivity' ]</msg>
+<msg timestamp="20160820 23:23:47.464" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session {"desiredCapabilities": {"deviceName": "192.168.56.101:5555", "automationName": "appium", "appActivity": "CommitListActivity", "platformVersion": "6.0", "appPackage": "com.ustwo.sample", "platformName": "Android", "app": "/Users/vallepuv/PycharmProjects/appium-demo-test/tests/apps/app-sample.apk"}}</msg>
+<msg timestamp="20160820 23:24:03.523" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:03.523" level="DEBUG">Opened application with session id 8981111d-6173-4773-92fe-85be68345839</msg>
+<msg timestamp="20160820 23:24:03.523" level="TRACE">Return: 1</msg>
+<status status="PASS" endtime="20160820 23:24:03.523" starttime="20160820 23:23:47.462"></status>
+</kw>
+<msg timestamp="20160820 23:24:03.523" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20160820 23:24:03.523" starttime="20160820 23:23:47.461"></status>
+</kw>
+<kw name="Get Available Projects" library="AdminPage">
+<doc>This function returns available projects</doc>
+<assign>
+<var>${available_projects}</var>
+</assign>
+<msg timestamp="20160820 23:24:03.524" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20160820 23:24:03.524" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/8981111d-6173-4773-92fe-85be68345839/elements {"using": "id", "sessionId": "8981111d-6173-4773-92fe-85be68345839", "value": "com.ustwo.sample:id/commit_list_textview_title"}</msg>
+<msg timestamp="20160820 23:24:04.558" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:04.759" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/8981111d-6173-4773-92fe-85be68345839/elements {"using": "id", "sessionId": "8981111d-6173-4773-92fe-85be68345839", "value": "com.ustwo.sample:id/commit_list_textview_title"}</msg>
+<msg timestamp="20160820 23:24:04.850" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:05.054" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/8981111d-6173-4773-92fe-85be68345839/elements {"using": "id", "sessionId": "8981111d-6173-4773-92fe-85be68345839", "value": "com.ustwo.sample:id/commit_list_textview_title"}</msg>
+<msg timestamp="20160820 23:24:05.260" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:05.460" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/8981111d-6173-4773-92fe-85be68345839/elements {"using": "id", "sessionId": "8981111d-6173-4773-92fe-85be68345839", "value": "com.ustwo.sample:id/commit_list_textview_title"}</msg>
+<msg timestamp="20160820 23:24:05.519" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:05.724" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/8981111d-6173-4773-92fe-85be68345839/elements {"using": "id", "sessionId": "8981111d-6173-4773-92fe-85be68345839", "value": "com.ustwo.sample:id/commit_list_textview_title"}</msg>
+<msg timestamp="20160820 23:24:05.792" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:05.997" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/8981111d-6173-4773-92fe-85be68345839/elements {"using": "id", "sessionId": "8981111d-6173-4773-92fe-85be68345839", "value": "com.ustwo.sample:id/commit_list_textview_title"}</msg>
+<msg timestamp="20160820 23:24:06.093" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:06.297" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/8981111d-6173-4773-92fe-85be68345839/elements {"using": "id", "sessionId": "8981111d-6173-4773-92fe-85be68345839", "value": "com.ustwo.sample:id/commit_list_textview_title"}</msg>
+<msg timestamp="20160820 23:24:06.378" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:06.579" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/8981111d-6173-4773-92fe-85be68345839/elements {"using": "id", "sessionId": "8981111d-6173-4773-92fe-85be68345839", "value": "com.ustwo.sample:id/commit_list_textview_title"}</msg>
+<msg timestamp="20160820 23:24:07.318" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:07.319" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/8981111d-6173-4773-92fe-85be68345839/elements {"using": "id", "sessionId": "8981111d-6173-4773-92fe-85be68345839", "value": "com.ustwo.sample:id/commit_list_textview_title"}</msg>
+<msg timestamp="20160820 23:24:07.463" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:07.463" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/8981111d-6173-4773-92fe-85be68345839/element/2/text {"sessionId": "8981111d-6173-4773-92fe-85be68345839", "id": "2"}</msg>
+<msg timestamp="20160820 23:24:07.520" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:07.520" level="TRACE">Return: ['Form validation framework for iOS.']</msg>
+<msg timestamp="20160820 23:24:07.520" level="INFO">${available_projects} = [u'Form validation framework for iOS.']</msg>
+<status status="PASS" endtime="20160820 23:24:07.520" starttime="20160820 23:24:03.524"></status>
+</kw>
+<kw name="Get Available Commits" library="AdminPage">
+<doc>This function returns available commits</doc>
+<assign>
+<var>${available_commits}</var>
+</assign>
+<msg timestamp="20160820 23:24:07.520" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20160820 23:24:07.521" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/8981111d-6173-4773-92fe-85be68345839/elements {"using": "id", "sessionId": "8981111d-6173-4773-92fe-85be68345839", "value": "com.ustwo.sample:id/commit_list_row_textview_message"}</msg>
+<msg timestamp="20160820 23:24:07.787" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:07.787" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/8981111d-6173-4773-92fe-85be68345839/elements {"using": "id", "sessionId": "8981111d-6173-4773-92fe-85be68345839", "value": "com.ustwo.sample:id/commit_list_row_textview_message"}</msg>
+<msg timestamp="20160820 23:24:08.156" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:08.156" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/8981111d-6173-4773-92fe-85be68345839/element/11/text {"sessionId": "8981111d-6173-4773-92fe-85be68345839", "id": "11"}</msg>
+<msg timestamp="20160820 23:24:08.180" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:08.181" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/8981111d-6173-4773-92fe-85be68345839/element/12/text {"sessionId": "8981111d-6173-4773-92fe-85be68345839", "id": "12"}</msg>
+<msg timestamp="20160820 23:24:08.203" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:08.203" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/8981111d-6173-4773-92fe-85be68345839/element/13/text {"sessionId": "8981111d-6173-4773-92fe-85be68345839", "id": "13"}</msg>
+<msg timestamp="20160820 23:24:08.225" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:08.225" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/8981111d-6173-4773-92fe-85be68345839/element/14/text {"sessionId": "8981111d-6173-4773-92fe-85be68345839", "id": "14"}</msg>
+<msg timestamp="20160820 23:24:08.250" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:08.250" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/8981111d-6173-4773-92fe-85be68345839/element/15/text {"sessionId": "8981111d-6173-4773-92fe-85be68345839", "id": "15"}</msg>
+<msg timestamp="20160820 23:24:08.283" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:08.283" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/8981111d-6173-4773-92fe-85be68345839/element/16/text {"sessionId": "8981111d-6173-4773-92fe-85be68345839", "id": "16"}</msg>
+<msg timestamp="20160820 23:24:08.305" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:08.305" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/8981111d-6173-4773-92fe-85be68345839/element/17/text {"sessionId": "8981111d-6173-4773-92fe-85be68345839", "id": "17"}</msg>
+<msg timestamp="20160820 23:24:08.334" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:08.334" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/8981111d-6173-4773-92fe-85be68345839/element/18/text {"sessionId": "8981111d-6173-4773-92fe-85be68345839", "id": "18"}</msg>
+<msg timestamp="20160820 23:24:08.360" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:08.360" level="TRACE">Return: ['Added analytics',
+ 'Update version number in readme',
+ 'Modified email recipients',
+ 'Only showing build status of master',
+ 'Updated specs to 1.1.2',
+ 'Fixed issue of checking the regular expressions. The validator only checked if the regular expression is correct somewhere within in string not the entire string. Which is fixed now. All tests succeeding now including the prior failing new numeric condition test.',
+ 'Following consistent coding style',
+ 'Fixing TravisCI url in readme']</msg>
+<msg timestamp="20160820 23:24:08.360" level="INFO">${available_commits} = [u'Added analytics', u'Update version number in readme', u'Modified email recipients', u'Only showing build status of master', u'Updated specs to 1.1.2', u'Fixed issue of checking the regular expressi...</msg>
+<status status="PASS" endtime="20160820 23:24:08.361" starttime="20160820 23:24:07.520"></status>
+</kw>
+<kw name="Is Public Project" library="AdminPage">
+<doc>This function returns the author email for the commit selected</doc>
+<assign>
+<var>${project_status}</var>
+</assign>
+<msg timestamp="20160820 23:24:08.361" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20160820 23:24:08.361" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/8981111d-6173-4773-92fe-85be68345839/elements {"using": "id", "sessionId": "8981111d-6173-4773-92fe-85be68345839", "value": "com.ustwo.sample:id/commit_list_row_textview_message"}</msg>
+<msg timestamp="20160820 23:24:08.613" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:08.614" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/8981111d-6173-4773-92fe-85be68345839/elements {"using": "id", "sessionId": "8981111d-6173-4773-92fe-85be68345839", "value": "com.ustwo.sample:id/commit_list_imageview_privacy_state"}</msg>
+<msg timestamp="20160820 23:24:08.674" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:08.674" level="TRACE">Return: True</msg>
+<msg timestamp="20160820 23:24:08.675" level="INFO">${project_status} = True</msg>
+<status status="PASS" endtime="20160820 23:24:08.675" starttime="20160820 23:24:08.361"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${project_status}</arg>
+</arguments>
+<msg timestamp="20160820 23:24:08.675" level="TRACE">Arguments: [ True ]</msg>
+<msg timestamp="20160820 23:24:08.675" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20160820 23:24:08.675" starttime="20160820 23:24:08.675"></status>
+</kw>
+<msg timestamp="20160820 23:24:08.675" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20160820 23:24:08.675" starttime="20160820 23:23:47.461"></status>
+</kw>
+<kw type="teardown" name="Close All Applications" library="AdminPage">
+<doc>Closes all open applications.</doc>
+<msg timestamp="20160820 23:24:08.676" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20160820 23:24:08.676" level="DEBUG">Closing all applications</msg>
+<msg timestamp="20160820 23:24:08.676" level="DEBUG">DELETE http://127.0.0.1:4723/wd/hub/session/8981111d-6173-4773-92fe-85be68345839 {"sessionId": "8981111d-6173-4773-92fe-85be68345839"}</msg>
+<msg timestamp="20160820 23:24:13.838" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:13.839" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20160820 23:24:13.839" starttime="20160820 23:24:08.676"></status>
+</kw>
+<doc>AC: Display project information (title, public / private, etc)</doc>
+<tags>
+<tag>Acceptance Criteria</tag>
+<tag>Demo Test</tag>
+<tag>TestCase01</tag>
+</tags>
+<status status="PASS" endtime="20160820 23:24:13.839" critical="yes" starttime="20160820 23:23:47.460"></status>
+</test>
+<test id="s1-t2" name="User Should Be Able To View the Latest Project Activity">
+<kw name="Open Application And Verify Latest Project Activity">
+<doc>This keyword is intentionally made a negative test case, assuming no latest activity, otherwise it will pass</doc>
+<msg timestamp="20160820 23:24:13.840" level="TRACE">Arguments: [  ]</msg>
+<kw name="Open Application On Mobile">
+<msg timestamp="20160820 23:24:13.841" level="TRACE">Arguments: [  ]</msg>
+<kw name="Open Application" library="AdminPage">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=6.0</arg>
+<arg>deviceName=192.168.56.101:5555</arg>
+<arg>app=/Users/vallepuv/PycharmProjects/appium-demo-test/tests/apps/app-sample.apk</arg>
+<arg>automationName=appium</arg>
+<arg>appPackage=com.ustwo.sample</arg>
+<arg>appActivity=CommitListActivity</arg>
+</arguments>
+<msg timestamp="20160820 23:24:13.841" level="TRACE">Arguments: [ 'http://localhost:4723/wd/hub' | platformName='Android' | platformVersion='6.0' | deviceName='192.168.56.101:5555' | app='/Users/vallepuv/PycharmProjects/appium-demo-test/tests/apps/app-sample.apk' | automationName='appium' | appPackage='com.ustwo.sample' | appActivity='CommitListActivity' ]</msg>
+<msg timestamp="20160820 23:24:13.842" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session {"desiredCapabilities": {"deviceName": "192.168.56.101:5555", "automationName": "appium", "appActivity": "CommitListActivity", "platformVersion": "6.0", "appPackage": "com.ustwo.sample", "platformName": "Android", "app": "/Users/vallepuv/PycharmProjects/appium-demo-test/tests/apps/app-sample.apk"}}</msg>
+<msg timestamp="20160820 23:24:28.807" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:28.807" level="DEBUG">Opened application with session id 97e261a3-33e7-4a10-903c-5c57e4cdd870</msg>
+<msg timestamp="20160820 23:24:28.807" level="TRACE">Return: 1</msg>
+<status status="PASS" endtime="20160820 23:24:28.807" starttime="20160820 23:24:13.841"></status>
+</kw>
+<msg timestamp="20160820 23:24:28.807" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20160820 23:24:28.807" starttime="20160820 23:24:13.840"></status>
+</kw>
+<kw name="Get Commit At Index" library="AdminPage">
+<doc>This function returns available commits</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${ref_commit}</var>
+</assign>
+<msg timestamp="20160820 23:24:28.808" level="TRACE">Arguments: [ '1' ]</msg>
+<msg timestamp="20160820 23:24:28.808" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/97e261a3-33e7-4a10-903c-5c57e4cdd870/elements {"using": "id", "sessionId": "97e261a3-33e7-4a10-903c-5c57e4cdd870", "value": "com.ustwo.sample:id/commit_list_row_textview_message"}</msg>
+<msg timestamp="20160820 23:24:29.899" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:30.104" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/97e261a3-33e7-4a10-903c-5c57e4cdd870/elements {"using": "id", "sessionId": "97e261a3-33e7-4a10-903c-5c57e4cdd870", "value": "com.ustwo.sample:id/commit_list_row_textview_message"}</msg>
+<msg timestamp="20160820 23:24:30.352" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:30.557" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/97e261a3-33e7-4a10-903c-5c57e4cdd870/elements {"using": "id", "sessionId": "97e261a3-33e7-4a10-903c-5c57e4cdd870", "value": "com.ustwo.sample:id/commit_list_row_textview_message"}</msg>
+<msg timestamp="20160820 23:24:30.761" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:30.967" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/97e261a3-33e7-4a10-903c-5c57e4cdd870/elements {"using": "id", "sessionId": "97e261a3-33e7-4a10-903c-5c57e4cdd870", "value": "com.ustwo.sample:id/commit_list_row_textview_message"}</msg>
+<msg timestamp="20160820 23:24:31.169" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:31.374" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/97e261a3-33e7-4a10-903c-5c57e4cdd870/elements {"using": "id", "sessionId": "97e261a3-33e7-4a10-903c-5c57e4cdd870", "value": "com.ustwo.sample:id/commit_list_row_textview_message"}</msg>
+<msg timestamp="20160820 23:24:31.555" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:31.759" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/97e261a3-33e7-4a10-903c-5c57e4cdd870/elements {"using": "id", "sessionId": "97e261a3-33e7-4a10-903c-5c57e4cdd870", "value": "com.ustwo.sample:id/commit_list_row_textview_message"}</msg>
+<msg timestamp="20160820 23:24:31.943" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:32.146" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/97e261a3-33e7-4a10-903c-5c57e4cdd870/elements {"using": "id", "sessionId": "97e261a3-33e7-4a10-903c-5c57e4cdd870", "value": "com.ustwo.sample:id/commit_list_row_textview_message"}</msg>
+<msg timestamp="20160820 23:24:33.003" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:33.003" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/97e261a3-33e7-4a10-903c-5c57e4cdd870/elements {"using": "id", "sessionId": "97e261a3-33e7-4a10-903c-5c57e4cdd870", "value": "com.ustwo.sample:id/commit_list_row_textview_message"}</msg>
+<msg timestamp="20160820 23:24:33.295" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:33.296" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/97e261a3-33e7-4a10-903c-5c57e4cdd870/element/9/text {"sessionId": "97e261a3-33e7-4a10-903c-5c57e4cdd870", "id": "9"}</msg>
+<msg timestamp="20160820 23:24:33.316" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:33.316" level="TRACE">Return: 'Added analytics'</msg>
+<msg timestamp="20160820 23:24:33.316" level="INFO">${ref_commit} = Added analytics</msg>
+<status status="PASS" endtime="20160820 23:24:33.316" starttime="20160820 23:24:28.808"></status>
+</kw>
+<kw name="Click Refresh" library="AdminPage">
+<doc>This function clicks on refresh icon available on the app</doc>
+<msg timestamp="20160820 23:24:33.317" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20160820 23:24:33.317" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/97e261a3-33e7-4a10-903c-5c57e4cdd870/elements {"using": "id", "sessionId": "97e261a3-33e7-4a10-903c-5c57e4cdd870", "value": "com.ustwo.sample:id/commit_list_button_refresh"}</msg>
+<msg timestamp="20160820 23:24:33.369" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:33.369" level="INFO">Clicking element 'id=com.ustwo.sample:id/commit_list_button_refresh'.</msg>
+<msg timestamp="20160820 23:24:33.369" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/97e261a3-33e7-4a10-903c-5c57e4cdd870/elements {"using": "id", "sessionId": "97e261a3-33e7-4a10-903c-5c57e4cdd870", "value": "com.ustwo.sample:id/commit_list_button_refresh"}</msg>
+<msg timestamp="20160820 23:24:33.417" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:33.417" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/97e261a3-33e7-4a10-903c-5c57e4cdd870/element/18/click {"sessionId": "97e261a3-33e7-4a10-903c-5c57e4cdd870", "id": "18"}</msg>
+<msg timestamp="20160820 23:24:33.747" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:33.747" level="TRACE">Return: &lt;admin_page.AdminPage object at 0x1038b4fd0&gt;</msg>
+<status status="PASS" endtime="20160820 23:24:33.748" starttime="20160820 23:24:33.317"></status>
+</kw>
+<kw name="Get Commit At Index" library="AdminPage">
+<doc>This function returns available commits</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${latest_commit}</var>
+</assign>
+<msg timestamp="20160820 23:24:33.748" level="TRACE">Arguments: [ '1' ]</msg>
+<msg timestamp="20160820 23:24:33.748" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/97e261a3-33e7-4a10-903c-5c57e4cdd870/elements {"using": "id", "sessionId": "97e261a3-33e7-4a10-903c-5c57e4cdd870", "value": "com.ustwo.sample:id/commit_list_row_textview_message"}</msg>
+<msg timestamp="20160820 23:24:34.364" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:34.567" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/97e261a3-33e7-4a10-903c-5c57e4cdd870/elements {"using": "id", "sessionId": "97e261a3-33e7-4a10-903c-5c57e4cdd870", "value": "com.ustwo.sample:id/commit_list_row_textview_message"}</msg>
+<msg timestamp="20160820 23:24:35.381" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:35.381" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/97e261a3-33e7-4a10-903c-5c57e4cdd870/elements {"using": "id", "sessionId": "97e261a3-33e7-4a10-903c-5c57e4cdd870", "value": "com.ustwo.sample:id/commit_list_row_textview_message"}</msg>
+<msg timestamp="20160820 23:24:35.586" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:35.586" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/97e261a3-33e7-4a10-903c-5c57e4cdd870/element/27/text {"sessionId": "97e261a3-33e7-4a10-903c-5c57e4cdd870", "id": "27"}</msg>
+<msg timestamp="20160820 23:24:35.607" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:35.608" level="TRACE">Return: 'Added analytics'</msg>
+<msg timestamp="20160820 23:24:35.608" level="INFO">${latest_commit} = Added analytics</msg>
+<status status="PASS" endtime="20160820 23:24:35.608" starttime="20160820 23:24:33.748"></status>
+</kw>
+<kw name="Should Not Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are equal.</doc>
+<arguments>
+<arg>${ref_commit}</arg>
+<arg>${latest_commit}</arg>
+</arguments>
+<msg timestamp="20160820 23:24:35.609" level="TRACE">Arguments: [ 'Added analytics' | 'Added analytics' ]</msg>
+<msg timestamp="20160820 23:24:35.609" level="DEBUG">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'unicode'&gt;</msg>
+<msg timestamp="20160820 23:24:35.609" level="FAIL">Added analytics == Added analytics</msg>
+<msg timestamp="20160820 23:24:35.610" level="DEBUG">Traceback (most recent call last):
+  None</msg>
+<status status="FAIL" endtime="20160820 23:24:35.610" starttime="20160820 23:24:35.608"></status>
+</kw>
+<status status="FAIL" endtime="20160820 23:24:35.610" starttime="20160820 23:24:13.840"></status>
+</kw>
+<kw type="teardown" name="Close All Applications" library="AdminPage">
+<doc>Closes all open applications.</doc>
+<msg timestamp="20160820 23:24:35.611" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20160820 23:24:35.611" level="DEBUG">Closing all applications</msg>
+<msg timestamp="20160820 23:24:35.611" level="DEBUG">DELETE http://127.0.0.1:4723/wd/hub/session/97e261a3-33e7-4a10-903c-5c57e4cdd870 {"sessionId": "97e261a3-33e7-4a10-903c-5c57e4cdd870"}</msg>
+<msg timestamp="20160820 23:24:40.361" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:40.361" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20160820 23:24:40.361" starttime="20160820 23:24:35.610"></status>
+</kw>
+<doc>AC: Display latest project activity</doc>
+<tags>
+<tag>Acceptance Criteria</tag>
+<tag>Demo Test</tag>
+<tag>TestCase02</tag>
+</tags>
+<status status="FAIL" endtime="20160820 23:24:40.361" critical="yes" starttime="20160820 23:24:13.839">Added analytics == Added analytics</status>
+</test>
+<test id="s1-t3" name="User Should Be Able To View Additional Information For Any Desired Commit">
+<kw name="Open Application And Verify Commit Information">
+<msg timestamp="20160820 23:24:40.363" level="TRACE">Arguments: [  ]</msg>
+<kw name="Open Application On Mobile">
+<msg timestamp="20160820 23:24:40.363" level="TRACE">Arguments: [  ]</msg>
+<kw name="Open Application" library="AdminPage">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=6.0</arg>
+<arg>deviceName=192.168.56.101:5555</arg>
+<arg>app=/Users/vallepuv/PycharmProjects/appium-demo-test/tests/apps/app-sample.apk</arg>
+<arg>automationName=appium</arg>
+<arg>appPackage=com.ustwo.sample</arg>
+<arg>appActivity=CommitListActivity</arg>
+</arguments>
+<msg timestamp="20160820 23:24:40.363" level="TRACE">Arguments: [ 'http://localhost:4723/wd/hub' | platformName='Android' | platformVersion='6.0' | deviceName='192.168.56.101:5555' | app='/Users/vallepuv/PycharmProjects/appium-demo-test/tests/apps/app-sample.apk' | automationName='appium' | appPackage='com.ustwo.sample' | appActivity='CommitListActivity' ]</msg>
+<msg timestamp="20160820 23:24:40.364" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session {"desiredCapabilities": {"deviceName": "192.168.56.101:5555", "automationName": "appium", "appActivity": "CommitListActivity", "platformVersion": "6.0", "appPackage": "com.ustwo.sample", "platformName": "Android", "app": "/Users/vallepuv/PycharmProjects/appium-demo-test/tests/apps/app-sample.apk"}}</msg>
+<msg timestamp="20160820 23:24:55.830" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:55.831" level="DEBUG">Opened application with session id 9fe26c9f-9883-4864-809e-408835bd1502</msg>
+<msg timestamp="20160820 23:24:55.831" level="TRACE">Return: 1</msg>
+<status status="PASS" endtime="20160820 23:24:55.831" starttime="20160820 23:24:40.363"></status>
+</kw>
+<msg timestamp="20160820 23:24:55.831" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20160820 23:24:55.831" starttime="20160820 23:24:40.363"></status>
+</kw>
+<kw name="Get Commit At Index" library="AdminPage">
+<doc>This function returns available commits</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<assign>
+<var>${ref_commit}</var>
+</assign>
+<msg timestamp="20160820 23:24:55.832" level="TRACE">Arguments: [ '3' ]</msg>
+<msg timestamp="20160820 23:24:55.832" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/elements {"using": "id", "sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "value": "com.ustwo.sample:id/commit_list_row_textview_message"}</msg>
+<msg timestamp="20160820 23:24:56.919" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:57.123" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/elements {"using": "id", "sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "value": "com.ustwo.sample:id/commit_list_row_textview_message"}</msg>
+<msg timestamp="20160820 23:24:57.188" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:57.392" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/elements {"using": "id", "sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "value": "com.ustwo.sample:id/commit_list_row_textview_message"}</msg>
+<msg timestamp="20160820 23:24:57.478" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:57.684" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/elements {"using": "id", "sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "value": "com.ustwo.sample:id/commit_list_row_textview_message"}</msg>
+<msg timestamp="20160820 23:24:57.784" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:57.988" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/elements {"using": "id", "sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "value": "com.ustwo.sample:id/commit_list_row_textview_message"}</msg>
+<msg timestamp="20160820 23:24:58.208" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:58.413" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/elements {"using": "id", "sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "value": "com.ustwo.sample:id/commit_list_row_textview_message"}</msg>
+<msg timestamp="20160820 23:24:58.613" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:58.815" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/elements {"using": "id", "sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "value": "com.ustwo.sample:id/commit_list_row_textview_message"}</msg>
+<msg timestamp="20160820 23:24:59.024" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:24:59.227" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/elements {"using": "id", "sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "value": "com.ustwo.sample:id/commit_list_row_textview_message"}</msg>
+<msg timestamp="20160820 23:25:00.085" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:00.085" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/elements {"using": "id", "sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "value": "com.ustwo.sample:id/commit_list_row_textview_message"}</msg>
+<msg timestamp="20160820 23:25:00.276" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:00.276" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/element/11/text {"sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "id": "11"}</msg>
+<msg timestamp="20160820 23:25:00.300" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:00.300" level="TRACE">Return: 'Modified email recipients'</msg>
+<msg timestamp="20160820 23:25:00.300" level="INFO">${ref_commit} = Modified email recipients</msg>
+<status status="PASS" endtime="20160820 23:25:00.301" starttime="20160820 23:24:55.831"></status>
+</kw>
+<kw name="Get Timestamp For Commit" library="AdminPage">
+<doc>This function returns timestamp for given commit name</doc>
+<arguments>
+<arg>${ref_commit}</arg>
+</arguments>
+<assign>
+<var>${ref_timestamp}</var>
+</assign>
+<msg timestamp="20160820 23:25:00.303" level="TRACE">Arguments: [ 'Modified email recipients' ]</msg>
+<msg timestamp="20160820 23:25:00.304" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/elements {"using": "id", "sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "value": "com.ustwo.sample:id/commit_list_row_textview_message"}</msg>
+<msg timestamp="20160820 23:25:00.487" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:00.487" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/elements {"using": "id", "sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "value": "com.ustwo.sample:id/commit_list_row_textview_message"}</msg>
+<msg timestamp="20160820 23:25:00.672" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:00.673" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/element/25/text {"sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "id": "25"}</msg>
+<msg timestamp="20160820 23:25:00.700" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:00.700" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/element/26/text {"sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "id": "26"}</msg>
+<msg timestamp="20160820 23:25:00.719" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:00.720" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/element/27/text {"sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "id": "27"}</msg>
+<msg timestamp="20160820 23:25:00.740" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:00.741" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/element/28/text {"sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "id": "28"}</msg>
+<msg timestamp="20160820 23:25:00.761" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:00.761" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/element/29/text {"sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "id": "29"}</msg>
+<msg timestamp="20160820 23:25:00.784" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:00.784" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/element/30/text {"sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "id": "30"}</msg>
+<msg timestamp="20160820 23:25:00.805" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:00.806" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/element/31/text {"sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "id": "31"}</msg>
+<msg timestamp="20160820 23:25:00.828" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:00.829" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/element/32/text {"sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "id": "32"}</msg>
+<msg timestamp="20160820 23:25:00.849" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:00.849" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/elements {"using": "xpath", "sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "value": "(//android.widget.LinearLayout[3]/android.widget.TextView[2])"}</msg>
+<msg timestamp="20160820 23:25:00.978" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:00.978" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/element/33/text {"sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "id": "33"}</msg>
+<msg timestamp="20160820 23:25:00.999" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:00.999" level="TRACE">Return: '2013-11-27T13:11:12Z'</msg>
+<msg timestamp="20160820 23:25:00.999" level="INFO">${ref_timestamp} = 2013-11-27T13:11:12Z</msg>
+<status status="PASS" endtime="20160820 23:25:00.999" starttime="20160820 23:25:00.301"></status>
+</kw>
+<kw name="Click On Commit" library="AdminPage">
+<doc>This function clicks on requested commit</doc>
+<arguments>
+<arg>${ref_commit}</arg>
+</arguments>
+<msg timestamp="20160820 23:25:00.999" level="TRACE">Arguments: [ 'Modified email recipients' ]</msg>
+<msg timestamp="20160820 23:25:01.000" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/elements {"using": "id", "sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "value": "com.ustwo.sample:id/commit_list_row_textview_message"}</msg>
+<msg timestamp="20160820 23:25:01.200" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:01.201" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/elements {"using": "id", "sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "value": "com.ustwo.sample:id/commit_list_row_textview_message"}</msg>
+<msg timestamp="20160820 23:25:01.400" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:01.400" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/element/42/text {"sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "id": "42"}</msg>
+<msg timestamp="20160820 23:25:01.430" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:01.430" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/element/43/text {"sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "id": "43"}</msg>
+<msg timestamp="20160820 23:25:01.454" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:01.454" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/element/44/text {"sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "id": "44"}</msg>
+<msg timestamp="20160820 23:25:01.486" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:01.486" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/element/45/text {"sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "id": "45"}</msg>
+<msg timestamp="20160820 23:25:01.508" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:01.509" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/element/46/text {"sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "id": "46"}</msg>
+<msg timestamp="20160820 23:25:01.533" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:01.539" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/element/47/text {"sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "id": "47"}</msg>
+<msg timestamp="20160820 23:25:01.568" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:01.568" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/element/48/text {"sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "id": "48"}</msg>
+<msg timestamp="20160820 23:25:01.606" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:01.607" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/element/49/text {"sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "id": "49"}</msg>
+<msg timestamp="20160820 23:25:01.635" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:01.635" level="INFO">Clicking element 'xpath=(//android.widget.LinearLayout[3])'.</msg>
+<msg timestamp="20160820 23:25:01.635" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/elements {"using": "xpath", "sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "value": "(//android.widget.LinearLayout[3])"}</msg>
+<msg timestamp="20160820 23:25:01.741" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:01.741" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/element/50/click {"sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "id": "50"}</msg>
+<msg timestamp="20160820 23:25:01.907" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:01.908" level="TRACE">Return: &lt;admin_page.AdminPage object at 0x1038b4fd0&gt;</msg>
+<status status="PASS" endtime="20160820 23:25:01.908" starttime="20160820 23:25:00.999"></status>
+</kw>
+<kw name="Get Project Name" library="AdminPage">
+<doc>This function returns the project title displayed in app</doc>
+<assign>
+<var>${proj_name}</var>
+</assign>
+<msg timestamp="20160820 23:25:01.908" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20160820 23:25:01.909" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/elements {"using": "id", "sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "value": "com.ustwo.sample:id/action_bar"}</msg>
+<msg timestamp="20160820 23:25:02.909" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:02.910" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/elements {"using": "xpath", "sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "value": "(//android.widget.TextView[1])"}</msg>
+<msg timestamp="20160820 23:25:02.986" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:02.986" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/element/52/text {"sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "id": "52"}</msg>
+<msg timestamp="20160820 23:25:03.009" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:03.009" level="TRACE">Return: 'Full Cycle App Testing Sample'</msg>
+<msg timestamp="20160820 23:25:03.009" level="INFO">${proj_name} = Full Cycle App Testing Sample</msg>
+<status status="PASS" endtime="20160820 23:25:03.009" starttime="20160820 23:25:01.908"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${proj_name}</arg>
+<arg>Full Cycle App Testing Sample</arg>
+</arguments>
+<msg timestamp="20160820 23:25:03.010" level="TRACE">Arguments: [ 'Full Cycle App Testing Sample' | 'Full Cycle App Testing Sample' ]</msg>
+<msg timestamp="20160820 23:25:03.010" level="DEBUG">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'unicode'&gt;</msg>
+<msg timestamp="20160820 23:25:03.010" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20160820 23:25:03.010" starttime="20160820 23:25:03.010"></status>
+</kw>
+<kw name="Get Author Name" library="AdminPage">
+<doc>This function returns the author name for the commit selected</doc>
+<assign>
+<var>${author_name}</var>
+</assign>
+<msg timestamp="20160820 23:25:03.010" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20160820 23:25:03.011" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/elements {"using": "id", "sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "value": "com.ustwo.sample:id/action_bar"}</msg>
+<msg timestamp="20160820 23:25:03.036" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:03.036" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/elements {"using": "id", "sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "value": "com.ustwo.sample:id/commit_detail_textview_name"}</msg>
+<msg timestamp="20160820 23:25:03.058" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:03.058" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/element/55/attribute/text {"sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "name": "text", "id": "55"}</msg>
+<msg timestamp="20160820 23:25:03.073" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:03.073" level="INFO">Element 'id=com.ustwo.sample:id/commit_detail_textview_name' attribute 'text' value 'Martin Stolz' </msg>
+<msg timestamp="20160820 23:25:03.074" level="TRACE">Return: 'Martin Stolz'</msg>
+<msg timestamp="20160820 23:25:03.074" level="INFO">${author_name} = Martin Stolz</msg>
+<status status="PASS" endtime="20160820 23:25:03.074" starttime="20160820 23:25:03.010"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${author_name}</arg>
+<arg>Martin Stolz</arg>
+</arguments>
+<msg timestamp="20160820 23:25:03.074" level="TRACE">Arguments: [ 'Martin Stolz' | 'Martin Stolz' ]</msg>
+<msg timestamp="20160820 23:25:03.074" level="DEBUG">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'unicode'&gt;</msg>
+<msg timestamp="20160820 23:25:03.076" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20160820 23:25:03.076" starttime="20160820 23:25:03.074"></status>
+</kw>
+<kw name="Get Author Email" library="AdminPage">
+<doc>This function returns the author email for the commit selected</doc>
+<assign>
+<var>${author_email}</var>
+</assign>
+<msg timestamp="20160820 23:25:03.076" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20160820 23:25:03.077" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/elements {"using": "id", "sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "value": "com.ustwo.sample:id/action_bar"}</msg>
+<msg timestamp="20160820 23:25:03.103" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:03.103" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/elements {"using": "id", "sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "value": "com.ustwo.sample:id/commit_detail_textview_email"}</msg>
+<msg timestamp="20160820 23:25:03.176" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:03.176" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/element/57/attribute/text {"sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "name": "text", "id": "57"}</msg>
+<msg timestamp="20160820 23:25:03.190" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:03.190" level="INFO">Element 'id=com.ustwo.sample:id/commit_detail_textview_email' attribute 'text' value 'martin@ustwo.co.uk' </msg>
+<msg timestamp="20160820 23:25:03.191" level="TRACE">Return: 'martin@ustwo.co.uk'</msg>
+<msg timestamp="20160820 23:25:03.191" level="INFO">${author_email} = martin@ustwo.co.uk</msg>
+<status status="PASS" endtime="20160820 23:25:03.191" starttime="20160820 23:25:03.076"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${author_email}</arg>
+<arg>martin@ustwo.co.uk</arg>
+</arguments>
+<msg timestamp="20160820 23:25:03.191" level="TRACE">Arguments: [ 'martin@ustwo.co.uk' | 'martin@ustwo.co.uk' ]</msg>
+<msg timestamp="20160820 23:25:03.191" level="DEBUG">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'unicode'&gt;</msg>
+<msg timestamp="20160820 23:25:03.191" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20160820 23:25:03.192" starttime="20160820 23:25:03.191"></status>
+</kw>
+<kw name="Get Commit Date" library="AdminPage">
+<doc>This function returns the author email for the commit selected</doc>
+<assign>
+<var>${commit_date}</var>
+</assign>
+<msg timestamp="20160820 23:25:03.192" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20160820 23:25:03.192" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/elements {"using": "id", "sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "value": "com.ustwo.sample:id/action_bar"}</msg>
+<msg timestamp="20160820 23:25:03.219" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:03.219" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/elements {"using": "id", "sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "value": "com.ustwo.sample:id/commit_detail_textview_date"}</msg>
+<msg timestamp="20160820 23:25:03.245" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:03.245" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/element/59/attribute/text {"sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "name": "text", "id": "59"}</msg>
+<msg timestamp="20160820 23:25:03.258" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:03.258" level="INFO">Element 'id=com.ustwo.sample:id/commit_detail_textview_date' attribute 'text' value '2013-11-27T13:11:12Z' </msg>
+<msg timestamp="20160820 23:25:03.258" level="TRACE">Return: '2013-11-27T13:11:12Z'</msg>
+<msg timestamp="20160820 23:25:03.259" level="INFO">${commit_date} = 2013-11-27T13:11:12Z</msg>
+<status status="PASS" endtime="20160820 23:25:03.259" starttime="20160820 23:25:03.192"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${commit_date}</arg>
+<arg>2013-11-27T13:11:12Z</arg>
+</arguments>
+<msg timestamp="20160820 23:25:03.259" level="TRACE">Arguments: [ '2013-11-27T13:11:12Z' | '2013-11-27T13:11:12Z' ]</msg>
+<msg timestamp="20160820 23:25:03.260" level="DEBUG">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'unicode'&gt;</msg>
+<msg timestamp="20160820 23:25:03.261" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20160820 23:25:03.261" starttime="20160820 23:25:03.259"></status>
+</kw>
+<kw name="Get Commit Message" library="AdminPage">
+<doc>This function returns the author email for the commit selected</doc>
+<assign>
+<var>${commit_message}</var>
+</assign>
+<msg timestamp="20160820 23:25:03.262" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20160820 23:25:03.262" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/elements {"using": "id", "sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "value": "com.ustwo.sample:id/action_bar"}</msg>
+<msg timestamp="20160820 23:25:03.325" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:03.325" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/elements {"using": "id", "sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "value": "com.ustwo.sample:id/commit_detail_textview_message"}</msg>
+<msg timestamp="20160820 23:25:03.347" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:03.348" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502/element/61/attribute/text {"sessionId": "9fe26c9f-9883-4864-809e-408835bd1502", "name": "text", "id": "61"}</msg>
+<msg timestamp="20160820 23:25:03.365" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:03.365" level="INFO">Element 'id=com.ustwo.sample:id/commit_detail_textview_message' attribute 'text' value 'Modified email recipients' </msg>
+<msg timestamp="20160820 23:25:03.365" level="TRACE">Return: 'Modified email recipients'</msg>
+<msg timestamp="20160820 23:25:03.365" level="INFO">${commit_message} = Modified email recipients</msg>
+<status status="PASS" endtime="20160820 23:25:03.365" starttime="20160820 23:25:03.261"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${commit_message}</arg>
+<arg>Modified email recipients</arg>
+</arguments>
+<msg timestamp="20160820 23:25:03.366" level="TRACE">Arguments: [ 'Modified email recipients' | 'Modified email recipients' ]</msg>
+<msg timestamp="20160820 23:25:03.366" level="DEBUG">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'unicode'&gt;</msg>
+<msg timestamp="20160820 23:25:03.366" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20160820 23:25:03.366" starttime="20160820 23:25:03.366"></status>
+</kw>
+<msg timestamp="20160820 23:25:03.366" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20160820 23:25:03.366" starttime="20160820 23:24:40.362"></status>
+</kw>
+<kw type="teardown" name="Close All Applications" library="AdminPage">
+<doc>Closes all open applications.</doc>
+<msg timestamp="20160820 23:25:03.367" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20160820 23:25:03.367" level="DEBUG">Closing all applications</msg>
+<msg timestamp="20160820 23:25:03.367" level="DEBUG">DELETE http://127.0.0.1:4723/wd/hub/session/9fe26c9f-9883-4864-809e-408835bd1502 {"sessionId": "9fe26c9f-9883-4864-809e-408835bd1502"}</msg>
+<msg timestamp="20160820 23:25:08.319" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160820 23:25:08.319" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20160820 23:25:08.319" starttime="20160820 23:25:03.367"></status>
+</kw>
+<doc>AC: Display commit information</doc>
+<tags>
+<tag>Acceptance Criteria</tag>
+<tag>Demo Test</tag>
+<tag>TestCase03</tag>
+</tags>
+<status status="PASS" endtime="20160820 23:25:08.319" critical="yes" starttime="20160820 23:24:40.362"></status>
+</test>
+<status status="FAIL" endtime="20160820 23:25:08.320" starttime="20160820 23:23:47.302"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="2">Critical Tests</stat>
+<stat fail="1" pass="2">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="2">Acceptance Criteria</stat>
+<stat fail="1" pass="2">Demo Test</stat>
+<stat fail="0" pass="1">TestCase01</stat>
+<stat fail="1" pass="0">TestCase02</stat>
+<stat fail="0" pass="1">TestCase03</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Test App" pass="2">Test App</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
